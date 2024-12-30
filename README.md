@@ -10,11 +10,29 @@ Set up a swagger (/ use OpenAPI) for an API (in python), and make it available o
 
 ### Creating a simple CRUD
 
--   install Python and its libs for the API (+lib for the swagger)
--   create routes
--   set up a light DB
--   use an ORM
+-   [x] install Python and its libs for the API (+lib for the swagger)
+-   [x] create routes
+-   [x] create swagger
+-   [ ] set up a better architecture
+-   [ ] set up a light DB
+-   [ ] use an ORM
 
 ### Managing deployment with github actions
 
 ### Exposing routes and swagger
+
+## How to use :
+
+-   launch the app with : `python ./src/app.py`
+-   use the swagger on : `<url>/apidocs`
+
+## Notes :
+
+Watch out before launching the application, you have to
+
+-   install python
+-   create a virtual env : `python -m venv env`
+-   activate the venv (depends on Windows/other) :
+    Windows : `.\env\Scripts\activate`
+    macOS/Linux : `source env/bin/activate`
+-   install requirements : `pip install -r requirements.txt`
