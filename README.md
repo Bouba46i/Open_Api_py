@@ -14,12 +14,14 @@ Set up a swagger (/ use OpenAPI) for an API (in python), and make it available o
 -   [x] create routes
 -   [x] create swagger
 -   [ ] set up a better architecture
--   [ ] set up a light DB
--   [ ] use an ORM
+-   [x] set up a light DB
+-   [x] use an ORM
 
 ### Managing deployment with github actions
 
 ### Exposing routes and swagger
+
+### make the postman test collection available
 
 ## How to use :
 
