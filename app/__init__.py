@@ -2,7 +2,6 @@ from flask import Flask
 from flasgger import Swagger
 from flask_sqlalchemy import SQLAlchemy
 
-
 from .const import DATABASE_URI, TRACK_MODIFICATIONS
 
 db_instance = SQLAlchemy()

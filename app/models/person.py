@@ -1,5 +1,3 @@
-import copy
-
 from app import db_instance
 
 class Person(db_instance.Model):
