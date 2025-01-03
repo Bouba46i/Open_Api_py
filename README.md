@@ -45,3 +45,9 @@ Watch out before launching the application, you have to
     Windows : `.\env\Scripts\activate`
     macOS/Linux : `source env/bin/activate`
 -   install requirements : `pip install -r requirements.txt`
+
+###### GitHub commits explanation :
+
+➕ : add
+📈 : improve
+🧹 : cleaning
