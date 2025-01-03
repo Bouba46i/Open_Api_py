@@ -16,6 +16,7 @@ Set up a swagger (/ use OpenAPI) for an API (in python), and make it available o
 -   [x] set up a better architecture
 -   [x] set up a light DB
 -   [x] use an ORM
+-   [x] set up CORS policy for the routes
 
 #### Bonus
 
