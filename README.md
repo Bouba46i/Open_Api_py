@@ -17,11 +17,18 @@ Set up a swagger (/ use OpenAPI) for an API (in python), and make it available o
 -   [x] set up a light DB
 -   [x] use an ORM
 
+#### Bonus
+
+-   [ ] set up a better error management
+-   [ ] set up some test
+-   [ ] make every comment in English
+-   [ ] make every api message in English
+
 ### Managing deployment with github actions
 
 ### Exposing routes and swagger
 
-### make the postman test collection available
+### Make the postman test collection available
 
 ## How to use :
 

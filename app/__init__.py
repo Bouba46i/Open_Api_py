@@ -1,10 +1,11 @@
 from flask import Flask
 from flasgger import Swagger
-from flask_sqlalchemy import SQLAlchemy
 
 from .const import DATABASE_URI, TRACK_MODIFICATIONS
+from .db import db_instance
 
-db_instance = SQLAlchemy()
+from app.routes import init_routes
+
 
 def create_app():
     # Init de l'app Flask
@@ -20,8 +21,8 @@ def create_app():
     # Init de SQLAlchemy
     db_instance.init_app(app)
 
-    from .routes import api_bp
-    app.register_blueprint(api_bp)
+    # Init des routes
+    init_routes(app)
 
     with app.app_context():
         init_DB()
@@ -34,7 +35,7 @@ def create_app():
     return app
 
 def init_DB():
-    from app.models.person import Person
+    from app.models import Person
 
     # Créer les tables
     db_instance.create_all()
