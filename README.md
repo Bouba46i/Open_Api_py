@@ -13,7 +13,7 @@ Set up a swagger (/ use OpenAPI) for an API (in python), and make it available o
 -   [x] install Python and its libs for the API (+lib for the swagger)
 -   [x] create routes
 -   [x] create swagger
--   [ ] set up a better architecture
+-   [x] set up a better architecture
 -   [x] set up a light DB
 -   [x] use an ORM
 
@@ -26,7 +26,11 @@ Set up a swagger (/ use OpenAPI) for an API (in python), and make it available o
 
 ### Managing deployment with github actions
 
-### Exposing routes and swagger
+> maybe not needed due to the exposing way
+
+### Exposing routes and swagger publicly
+
+-   [ ] find a way to use it from a public URL freely (ngrok ?)
 
 ### Make the postman test collection available
 
