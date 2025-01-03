@@ -42,12 +42,16 @@ Watch out before launching the application, you have to
 -   install python
 -   create a virtual env : `python -m venv env`
 -   activate the venv (depends on Windows/other) :
-    Windows : `.\env\Scripts\activate`
-    macOS/Linux : `source env/bin/activate`
+    -   Windows : `.\env\Scripts\activate`
+    -   macOS/Linux : `source env/bin/activate`
 -   install requirements : `pip install -r requirements.txt`
+
+---
 
 ###### GitHub commits explanation :
 
 ➕ : add
+
 📈 : improve
+
 🧹 : cleaning
