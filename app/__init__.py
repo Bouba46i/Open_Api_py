@@ -1,7 +1,7 @@
 from flask import Flask
 from flasgger import Swagger
 
-from .const import DATABASE_URI, TRACK_MODIFICATIONS
+from .const import DATABASE_URI, DATABASE_URI_TEST, TRACK_MODIFICATIONS
 from .db import db_instance
 
 from app.routes import init_routes
@@ -31,6 +31,27 @@ def create_app():
     Swagger(app)  
 
     # autre
+
+    return app
+
+# TODO : rassembler les deux fonctions en une seule
+def create_test_app():
+    # Init de l'app Flask
+    app = Flask(__name__)
+
+    # db SQLite
+    app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI_TEST
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config['TESTING'] = True
+
+    # Init de SQLAlchemy
+    db_instance.init_app(app)
+
+    # Init des routes
+    init_routes(app)
+
+    with app.app_context():        
+        db_instance.create_all()
 
     return app
 

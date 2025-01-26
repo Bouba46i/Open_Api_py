@@ -10,7 +10,7 @@ class PersonRepository:
 		return Person.query.all()
 
 	def get_person_by_id(id: int) -> Person:
-		return Person.query.get(id)
+		return db_instance.session.get(Person, id)
 
 	def get_number_of_persons() -> int:
 		return Person.query.count()
@@ -22,16 +22,16 @@ class PersonRepository:
 		return person
 
 	def update_person(id: int, person: Person) -> Person:
-		person_to_update = Person.query.get(id)
+		person_to_update = db_instance.session.get(Person, id)
 
 		# TODO : trouver un moyen de rendre ca dynamique
-		person_to_update.name = person["name"]
+		person_to_update.name = person.name
 		db_instance.session.commit()
 
 		return person_to_update
 
 	def delete_person(id: int) -> Person:
-		person_to_delete = Person.query.get(id)
+		person_to_delete = db_instance.session.get(Person, id)
 
 		db_instance.session.delete(person_to_delete)
 		db_instance.session.commit()

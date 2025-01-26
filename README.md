@@ -21,7 +21,7 @@ Set up a swagger (/ use OpenAPI) for an API (in python), and make it available o
 #### Bonus
 
 -   [ ] set up a better error management
--   [ ] set up some test
+-   [ ] set up some test (implements TDD)
 -   [ ] make every comment in English
 -   [ ] make every api message in English
 
